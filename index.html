@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MUSIC -->
+
+    <audio id="birthdayMusic" loop>
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" onclick="toggleMusic()">
+        🎵
+    </button>
+
+
+    <!-- FLOATING EFFECTS -->
+
+    <div class="hearts"></div>
+    <div class="sparkles"></div>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                ✨ A LITTLE SURPRISE ✨
+            </p>
+
+            <h1>
+                Happy Birthday
+            </h1>
+
+            <h2 id="birthdayName">
+                Stupid Garu ✨
+            </h2>
+
+            <p class="hero-message">
+                Today isn't just another day...
+                it's the day someone truly special was born.
+            </p>
+
+            <button class="scroll-button"
+                    onclick="scrollToSection('memories')">
+                ↓ Let See Some Pictures...... ↓
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+        <div class="container">
+
+            <p class="section-small">
+                FOR SOMEONE SPECIAL
+            </p>
+
+            <h2>
+                This little website is just for you ❤️
+            </h2>
+
+            <p>
+                I wanted to create something special instead of
+                simply saying "Happy Birthday".
+            </p>
+
+            <p>
+                So here is a small journey through memories,
+                laughter, friendship and all the beautiful moments
+                we've shared.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MEMORIES -->
+
+    <section class="memories" id="memories">
+
+        <div class="container">
+
+            <p class="section-small">
+                📸 OUR MEMORIES
+            </p>
+
+            <h2>
+                Moments That Deserve To Be Remembered
+            </h2>
+
+            <div class="gallery">
+
+                <div class="photo-card">
+                    <img src="images/childhood1.jpg"
+                         alt="Childhood Memory">
+                    <div class="photo-caption">
+                        Little You 🥹
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="images/childhood2.jpg"
+                         alt="Childhood Memory">
+                    <div class="photo-caption">
+                        Those Cute Days ❤️
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="images/childhood3.jpg"
+                         alt="Childhood Memory">
+                    <div class="photo-caption">
+                        Childhood Memories ✨
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="images/memory1.jpg"
+                         alt="Beautiful Memory">
+                    <div class="photo-caption">
+                        Beautiful Moment 💕
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="images/memory2.jpg"
+                         alt="Beautiful Memory">
+                    <div class="photo-caption">
+                        Crazy Memories 😂
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="images/memory3.jpg"
+                         alt="Beautiful Memory">
+                    <div class="photo-caption">
+                        Forever Memories ❤️
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MESSAGE -->
+
+    <section class="message-section">
+
+        <div class="message-card">
+
+            <div class="quote">
+                ❝
+            </div>
+
+            <h2>
+                A Birthday Message For You
+            </h2>
+
+            <p>
+                Some people enter our lives and quietly become
+                an important part of our story.
+            </p>
+
+            <p>
+                You are one of those people.
+            </p>
+
+            <p>
+                I hope this new year of your life brings you
+                happiness, success, beautiful memories,
+                endless laughter and everything you've ever wished for.
+            </p>
+
+            <p>
+                Never stop being the amazing person you are.
+            </p>
+
+            <div class="signature">
+                With lots of CARE ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- COUNTDOWN STYLE -->
+
+    <section class="birthday-section">
+
+        <div class="container">
+
+            <div class="birthday-icon">
+                🎂
+            </div>
+
+            <h2>
+                Another Beautiful Year Begins...
+            </h2>
+
+            <div class="numbers">
+
+                <div>
+                    <span>365</span>
+                    <small>NEW DAYS</small>
+                </div>
+
+                <div>
+                    <span>12</span>
+                    <small>NEW MONTHS</small>
+                </div>
+
+                <div>
+                    <span>∞</span>
+                    <small>NEW MEMORIES</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SURPRISE -->
+
+    <section class="surprise-section">
+
+        <div class="container">
+
+            <p class="section-small">
+                🎁 ONE LAST THING
+            </p>
+
+            <h2>
+                Finally Once Again.....click here
+            </h2>
+
+            <p>
+                But you have to click the button...
+            </p>
+
+            <button class="surprise-button"
+                    onclick="openSurprise()">
+
+                🎁 OPEN MY WISH FOR YOU
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINAL SURPRISE -->
+
+    <div class="surprise-popup" id="surprisePopup">
+
+        <div class="popup-content">
+
+            <button class="close-button"
+                    onclick="closeSurprise()">
+                ×
+            </button>
+
+            <div class="big-birthday">
+                🎉
+            </div>
+
+            <h1>
+                HAPPY BIRTHDAY!
+            </h1>
+
+            <h2>
+                You deserve all the happiness in the world ❤️
+            </h2>
+
+            <p>
+                Stupid Garu..May your smile always stay beautiful,
+                your dreams become reality,
+                and your life be filled with unforgettable moments.
+            </p>
+
+            <div class="firework-text">
+                🎂 🎈 🎁 ❤️ ✨ 🥳
+            </div>
+
+            <p class="final-message">
+                Here's to another 100 amazing years!
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Made with ❤️ specially for you
+        </p>
+
+        <p>
+            Happy Birthday 🎂
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
